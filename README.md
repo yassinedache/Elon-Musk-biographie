@@ -4,7 +4,7 @@ This project is a multi-page, fully responsive website dedicated to presenting t
 
 Built using HTML, CSS, and responsive design techniques, it showcases structured content, animations, and modern UI components to offer an engaging user experience.
 
-🔥 Features
+## 🔥 Features
 
 - **Home Page:** Dynamic hero section, quick navigation, and curated news cards. See `pages/index.html`.
 - **Biography Page:** Timeline-style layout highlighting Elon Musk's early life, education, and evolution. See `pages/bio.html`.
@@ -16,14 +16,14 @@ Built using HTML, CSS, and responsive design techniques, it showcases structured
 - Custom CSS styling with multiple design themes for each page.
 - Clean code structure and reusable layout components.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3 (flexbox, grid, custom animations)
 - Responsive Web Design
 - Image sliders implemented using CSS only
 
-🎯 Project Goals
+## 🎯 Project Goals
 
 - Practice multi-page website architecture.
 - Improve front-end design skills.
@@ -74,7 +74,6 @@ This repository does not include a license file by default. If you want an open 
 ## Contributors
 
 - `yassinedache` — Project owner and primary author.
-- GitHub Copilot — Assisted with repository tasks and documentation.
 
 ---
 
