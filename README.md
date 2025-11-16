@@ -75,12 +75,4 @@ This repository does not include a license file by default. If you want an open 
 
 - `yassinedache` — Project owner and primary author.
 
----
 
-If you want, I can also:
-
-- Add a `LICENSE` file (MIT recommended).
-- Add a short `CONTRIBUTING.md` with PR guidelines.
-- Enable GitHub Pages and verify the live URL for you.
-
-Tell me which of these you'd like me to do next.
