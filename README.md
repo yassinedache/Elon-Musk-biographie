@@ -37,16 +37,6 @@ Built using HTML, CSS, and responsive design techniques, it showcases structured
 
 No build steps or package managers are required — this is a static site.
 
-## Deploying (GitHub Pages)
-
-You can publish the site using GitHub Pages:
-
-1. Go to the repository on GitHub: `https://github.com/yassinedache/Elon-Musk-biographie`.
-2. Open **Settings > Pages**.
-3. Under **Build and deployment**, choose the branch `master` and the folder `/ (root)` (or select `/pages` if you move the site there) and save.
-4. GitHub will provide a URL where the site is published (may take a minute).
-
-Alternatively, create a `gh-pages` branch and push the built files there for Pages to serve.
 
 ## File Structure (key files)
 
@@ -59,17 +49,7 @@ Alternatively, create a `gh-pages` branch and push the built files there for Pag
 - `assets/imgs/` — Images used across the site
 - `assets/fonts/` — Custom fonts
 
-## Contributing
 
-If you want to contribute improvements (content edits, CSS refinements, accessibility fixes), please open a pull request. Some suggested tasks:
-
-- Improve accessibility (ARIA, semantic markup).
-- Add lightweight JavaScript progressive enhancements (optional).
-- Optimize images and fonts for faster load times.
-
-## License
-
-This repository does not include a license file by default. If you want an open license such as MIT, tell me and I can add a `LICENSE` file.
 
 ## Contributors
 
