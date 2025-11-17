@@ -1,0 +1,114 @@
+/* ---------- business - banner ---------- */
+.business__banner {
+    clip-path: polygon(0% 0%, 0% 100%, 20% 90%, 35% 100%, 50% 90%, 65% 100%, 80% 90%, 100% 100%, 100% 0%);
+    background-image: url(https://media.lesechos.com/api/v1/images/view/648c96a861da6658a16d32a8/1280x720/090521682979-web-tete.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.business__banner h1 {
+    margin-left: 40px;
+}
+
+
+/* ---------- buisness - article ---------- */
+.business__article--flex {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.business__article--flex-even {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.business__article__description {
+    width: 60%;
+}
+
+.business__article--flex-even .business__article__description{
+    margin-left: 50px;
+}
+
+.article-number {
+    font-size: 150px;
+    color: rgba(0, 0, 0, 0.158);
+    margin-left: -50px;
+}
+
+.business__article__description h2 {
+    margin-bottom: 30px;
+}
+
+.business__article__description p {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.business__article__img {
+    height: 500px;
+    width: 350px;
+}
+
+.business__article__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------- responsive ---------- */
+@media (max-width:800px) {
+    /* Affichage en colonne pour les écrans plus petits */
+    .business__article--flex {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .business__article--flex .business__article__img img {
+        margin-top: 50px;
+    }
+
+    /* Centrage horizontal pour les images en mode colonne */
+    .business__article__img{
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .business__article__img img {
+        width: 90%;
+    }
+
+    .business__article--flex-even {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .business__article__description {
+        width: 100%;
+    }
+
+    .business__article--flex .business__article__description {
+        padding-left: 20px;
+    }
+
+    .business__article--flex-even .article-number{
+        margin-top: 100px;
+    }
+
+    .article-number{
+        margin-left: 0px;
+    }
+}

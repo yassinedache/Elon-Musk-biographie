@@ -1,0 +1,136 @@
+/* ---------- gallery -banner ---------- */
+.gallery__banner {
+    clip-path: polygon(0% 0%, 0% 100%, 20% 90%, 35% 100%, 50% 90%, 65% 100%, 80% 90%, 100% 100%, 100% 0%);
+    background-image: url(https://media.lesechos.com/api/v1/images/view/648c96a861da6658a16d32a8/1280x720/090521682979-web-tete.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gallery__banner h1 {
+    margin-left: 40px;
+}
+
+/* ---------- gallery - slider ---------- */
+.section__slider {
+    overflow: hidden;
+}
+
+.gallery__slider {
+    width: 6000px;
+    height: 30rem;
+    display: flex;
+    /* Animation de défilement */
+    animation: flowbanner 100s linear infinite;
+    text-align: center;
+}
+
+.gallery__slider a {
+    display: inline-block;
+    margin-top: 20rem;
+    color: white;
+    background-color: #DF2D2B;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+}
+
+.gallery__slider h3 {
+    /* Style des titres dans le slider */
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.gallery__title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0px 100px;
+}
+
+.gallery__slider div {
+    /* Style des éléments dans le slider */
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 30rem;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------- slider imgs ---------- */
+.parcours__img--un {
+    background-image: url(https://i.f1g.fr/media/eidos/805x453_crop/2022/04/29/XVM36cf45b8-c98f-11ec-90f7-a65ea600a5a3.jpg);
+}
+
+.parcours__img--deux {
+    background-image: url(https://www.sciencesetavenir.fr/assets/img/2016/09/02/cover-r4x3w1000-5834b11017175-elon-musk.jpg);
+}
+
+.parcours__img--trois {
+    background-image: url(https://business-cool.com/wp-content/uploads/2021/05/elon-musk-flickr-ted-conference-2.jpeg);
+}
+
+.parcours__img--quatre {
+    background-image: url(https://www.01net.com/app/uploads/2023/09/elon-musk-biographie-walter-isaacson.jpg);
+}
+
+.parcours__img--cinq {
+    background-image: url(https://danitis.com/wp-content/uploads/2021/09/Elon-Musk-1_602a498376e02.png);
+}
+
+.parcours__img--six {
+    background-image: url(https://www.planetegrandesecoles.com/wp-content/uploads/2022/08/elon-musk-850x560.jpg);
+}
+
+.reves__img--un {
+    background-image: url(https://www.maxpiccinini.com/wp-content/uploads/les-7-meilleurs-conseils-delon-musk-pour-devenir-riche-et-reussir.jpg);
+}
+
+.reves__img--deux {
+    background-image: url(https://www.radiofrance.fr/s3/cruiser-production-eu3/2024/02/7e0e438b-eca9-4732-8943-ef776123d7b7/1200x680_sc_gettyimages-942852896-2718-x-2000-1.jpg);
+}
+
+.reves__img--trois {
+    background-image: url(https://media.ouest-france.fr/v1/pictures/MjAyMzA1ODdlYzhhYTRkZDQxNGFmMDhhZWQ2MGIwYTBmYjQ3Mzg?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=009a3cbcf2ad7c7d18afb87b72b87456146a1a65dfe199e06e09c26b1b3fcc6f);
+}
+
+.reves__img--quatre {
+    background-image: url(https://focus.telerama.fr/2023/07/24/0/0/7918/5283/1200/0/60/0/8cc60ce_1690204463703-068-aa-24072023-1283799.jpg);
+}
+
+.reves__img--cinq {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmitUcduxY-zJfR8vf2yvkd092GD4LT2HOGhXdSyY5YQ&s);
+}
+
+.reves__img--six {
+    background-image: url(https://image.jeuxvideo.com/medias-md/164984/1649841334-8891-photo.jpeg);
+}
+
+@keyframes flowbanner {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-45%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* ---------- responsive ---------- */
+@media (max-width : 600px) {
+    .gallery__title {
+        /* Ajustement du padding pour le titre de la galerie sur les petits écrans */
+        padding: 0px 20px;
+    }
+}

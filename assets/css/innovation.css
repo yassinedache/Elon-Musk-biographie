@@ -1,0 +1,185 @@
+/* ---------- innovation - banner ---------- */
+.innovation__banner {
+    clip-path: polygon(0% 0%, 0% 100%, 20% 90%, 35% 100%, 50% 90%, 65% 100%, 80% 90%, 100% 100%, 100% 0%);
+    background-image: url(https://media.lesechos.com/api/v1/images/view/648c96a861da6658a16d32a8/1280x720/090521682979-web-tete.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.innovation__banner h1 {
+    margin-left: 40px;
+}
+
+
+/* ---------- innovation - resume ---------- */
+.innovation__resume {
+    margin: 100px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.innovation__resume h2 {
+    margin-bottom: 50px;
+}
+
+.innovation__resume p {
+    margin: 20px;
+}
+
+
+/* ---------- innovation - parole ---------- */
+.section__paroles {
+    background-color: var(--main-black);
+    margin-bottom: 50px;
+}
+
+.paroles__slider {
+    width: 100%;
+    max-width: 900px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Styles spécifiques pour chaque élément de l'actuallite */
+.paroles__slider input[type=radio] {
+    display: none;
+}
+
+.paroles__contents {
+    padding: 0;
+    margin: 0;
+}
+
+.paroles__contents li {
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+    padding-top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.section__paroles ul p {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    color: rgb(144, 144, 144);
+    font-style: italic;
+}
+
+.section__paroles ul div {
+    text-align: center;
+}
+
+.section__paroles ul h4 {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.section__paroles ul h5 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.paroles__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 2;
+}
+
+.paroles__dots label {
+    display: inline-block;
+    margin: .5rem;
+    background-color: rgba(255, 255, 255, 0.55);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.paroles__slider input[type=radio]:nth-child(1):checked~.paroles__dots>label:nth-child(1) {
+    background-color: #ffffff;
+}
+
+.paroles__slider input[type=radio]:nth-child(2):checked~.paroles__dots>label:nth-child(2) {
+    background-color: #fff;
+}
+
+.paroles__slider input[type=radio]:nth-child(3):checked~.paroles__dots>label:nth-child(3) {
+    background-color: #fff;
+}
+
+.paroles__slider input[type=radio]:nth-child(4):checked~.paroles__dots>label:nth-child(4) {
+    background-color: #fff;
+}
+
+.paroles__slider input[type=radio]:nth-child(1):checked~ul.paroles__contents>li:nth-child(1) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+    z-index: 1;
+}
+
+/* Lorsque le deuxième bouton radio est coché, affiche le deuxième élément de la liste des contenus des paroles */
+/* Opacité à 1 pour rendre visible */
+/* Transition de l'opacité sur une durée de 0.5 seconde avec une accélération et un ralentissement */
+/* Réglez l'indice Z sur 1 pour placer l'élément au-dessus des autres */
+.paroles__slider input[type=radio]:nth-child(2):checked~ul.paroles__contents>li:nth-child(2) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+    z-index: 1;
+}
+
+.paroles__slider input[type=radio]:nth-child(3):checked~ul.paroles__contents>li:nth-child(3) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+    z-index: 1;
+}
+
+.paroles__slider input[type=radio]:nth-child(4):checked~ul.paroles__contents>li:nth-child(4) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+    z-index: 1;
+}
+
+
+/* ---------- innovation - content ---------- */
+.innovation__content {
+    display: flex;
+    gap: 50px;
+    padding: 50px 10%;
+}
+
+.innovation__content img {
+    height: 300px;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.innovation__content h3 {
+    margin-bottom: 30px;
+}
+
+.innovation__content p {
+    margin-top: 20px;
+}
+
+
+/* ---------- responsive ---------- */
+@media (max-width : 800px) {
+    .innovation__content {
+        flex-direction: column;
+    }
+
+    .innovation__content img {
+        width: 80vw;
+    }
+}

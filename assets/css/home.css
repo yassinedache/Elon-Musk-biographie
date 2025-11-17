@@ -1,0 +1,483 @@
+/* ---------- home - banner ---------- */
+.home__banner {
+    background-image: url(https://cryptoast.fr/wp-content/uploads/2023/08/spacex-tesla.jpg);
+    height: 800px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home__banner__description {
+    position: absolute;
+    color: white;
+    width: 50%;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+.home__banner__description p {
+    margin-top: 40px;
+    max-width: 700px;
+}
+
+.home__banner__description a {
+    /* Style des liens dans la description de la bannière */
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 40px;
+    background-color: var(--main-white);
+    border-radius: 20px;
+    color: black;
+    border: 1px solid var(--main-white);
+}
+
+.home__banner__description a:hover {
+    /* Style des liens au survol dans la description de la bannière */
+    background-color: var(--main-black);
+    color: white;
+    border: 1px solid var(--main-white);
+}
+
+.home__banner__flur {
+    /* Fond semi-transparent pour la bannière */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+
+/* ---------- home - resume ---------- */
+.home__resume {
+    width: 70%;
+    padding: 80px 0px 50px 100px;
+}
+
+.home__resume>h2 {
+    font-family: 'lobster';
+}
+
+.home__resume p {
+    margin: 20px 0px 0px 0px;
+}
+
+.home__resume img {
+    width: 300px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+
+/* ---------- home - actuallite ---------- */
+.section__actuallite {
+    /* Image de fond pour la section des actualités */
+    background-image: url(https://usbeketrica.com/media/86871/download/58b575a77baaf.jpg?v=1&inline=1);
+    background-size: cover;
+    height: 750px;
+    position: relative;
+    padding-right: 5%;
+}
+
+.actuallite--flur {
+    /* Fond semi-transparent pour la section des actualités */
+    position: absolute;
+    height: 750px;
+    width: 35%;
+    background-color: rgba(8, 8, 8, 0.41);
+    z-index: 0;
+    animation: blogleftside 2s;
+}
+
+.actuallite__main {
+    z-index: 1;
+    position: relative;
+    height: 750px;
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 5%;
+}
+
+.actuallite__main input {
+    display: none;
+}
+
+.actuallite__main h2 {
+    color: white;
+    margin-top: 2rem;
+    font-size: 26px;
+    animation: blogleftside 2s;
+}
+
+.actuallite__main hr {
+    width: 28%;
+    margin: 2rem 0;
+    animation: blogleftside 2s;
+}
+
+.actuallite__main>p {
+    color: white;
+    width: 28%;
+    line-height: 1.5rem;
+    animation: blogleftside 2s;
+}
+
+.actuallite__pagination {
+    /* Style de la pagination des actualités */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: blogleftside 2s;
+}
+
+.actuallite__pagination label {
+    width: 28%;
+    background-color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.actuallite__pagination label:first-child {
+    margin-top: 4rem;
+}
+
+.actuallite__content {
+    position: absolute;
+    height: 85%;
+    width: 58%;
+    right: 0px;
+    top: 7%;
+}
+
+.actuallite__inner {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    padding-bottom: 3rem;
+    animation: blogrightside 2s;
+}
+
+.actuallite__content img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.actuallite__content li {
+    height: 100%;
+}
+
+.actuallite__content h3 {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.actuallite__content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    color: #3DC1CD;
+}
+
+.actuallite__content p {
+    line-height: 1.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-height: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+/* Styles spécifiques pour chaque bouton de pagination et actualité */
+/* Lorsque le premier bouton radio est coché, change la couleur du texte en #3DC1CD et met en gras l'étiquette de pagination correspondante */
+.actuallite__main input[type=radio]:nth-child(1):checked~.actuallite__pagination label:nth-child(1) {
+    color: #3DC1CD;
+    font-weight: bold;
+}
+
+.actuallite__main input[type=radio]:nth-child(2):checked~.actuallite__pagination label:nth-child(2) {
+    color: #3DC1CD;
+    font-weight: bold;
+}
+
+.actuallite__main input[type=radio]:nth-child(3):checked~.actuallite__pagination label:nth-child(3) {
+    color: #3DC1CD;
+    font-weight: bold;
+}
+
+.actuallite__main input[type=radio]:nth-child(4):checked~.actuallite__pagination label:nth-child(4) {
+    color: #3DC1CD;
+    font-weight: bold;
+}
+
+.actuallite__main input[type=radio]:nth-child(1):checked~.actuallite__content li:nth-child(1) {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+.actuallite__main input[type=radio]:nth-child(2):checked~.actuallite__content li:nth-child(2) {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+.actuallite__main input[type=radio]:nth-child(3):checked~.actuallite__content li:nth-child(3) {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+.actuallite__main input[type=radio]:nth-child(4):checked~.actuallite__content li:nth-child(4) {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+/* Animation de transition pour les éléments de pagination et d'actualité */
+@keyframes blogleftside {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes blogrightside {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+
+/* ---------- home - influence ---------- */
+.home__influence {
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Grid pour le conteneur des images avec deux colonnes et deux lignes */
+.home__influence__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.home__influence__img img {
+    width: 280px;
+    height: 200px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.home__influence__description {
+    width: 50%;
+}
+
+.home__influence__description p {
+    margin-top: 20px;
+}
+
+
+/* ---------- home - raccourci ---------- */
+.home__raccourci {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    font-family: 'poppins';
+    font-size: 2.4rem;
+}
+
+.home__raccourci a {
+    flex: 1;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.3s filter ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    color: white;
+}
+
+.home__raccourci a:nth-child(1) {
+    background-image: url(https://c.ndtvimg.com/2022-11/db4973hc_elon-musk-reuters-photo_625x300_05_November_22.jpg);
+}
+
+.home__raccourci a:nth-child(2) {
+    background-image: url(https://s.abcnews.com/images/Business/elon-musk-file-gty-jef-220711_1657563938913_hpMain_16x9_1600.jpg);
+}
+
+.home__raccourci a:nth-child(3) {
+    background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2023/12/p-1-elon-musk-2023.jpg);
+}
+
+.home__raccourci a:hover {
+    filter: grayscale(0);
+}
+
+
+/* ---------- home - responsive ---------- */
+/* Media queries pour différentes tailles d'écran */
+@media (max-width : 1500px) {
+    .home__influence__img {
+        display: none;
+    }
+
+    .home__influence__description {
+        width: 80%;
+    }
+
+    .home__raccourci {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    .actuallite__main>p {
+        font-size: 15px;
+    }
+
+    .actuallite__content h4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .actuallite__pagination label {
+        font-size: 12px;
+    }
+
+    .home__banner__description h1 {
+        font-size: 4rem;
+    }
+
+    .home__banner__description p {
+        display: none;
+    }
+}
+
+@media (max-width : 650px) {
+
+    .home__resume {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .home__influence {
+        padding: 20px;
+    }
+
+    .home__influence__description {
+        width: 100%;
+    }
+
+    .actuallite__main {
+        padding-left: 12%;
+    }
+
+    .actuallite__main h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .actuallite__main hr {
+        margin: 1rem 0;
+    }
+
+    .actuallite__main>p {
+        line-height: 1.3rem;
+    }
+
+    .actuallite__pagination {
+        width: 40%;
+        gap: 10px;
+        position: absolute;
+        right: 5%;
+        top: 0;
+    }
+
+    .actuallite__pagination label {
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+
+    .actuallite__pagination label:first-child {
+        margin-top: 3rem;
+    }
+
+    .actuallite__content {
+        width: 100%;
+        top: 41%;
+        padding-left: 5%;
+    }
+
+    .actuallite__content li {
+        height: 67%;
+    }
+
+    .actuallite__content img {
+        height: 15rem;
+    }
+
+    .actuallite__content h3 {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .actuallite__content h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .actuallite__content p {
+        font-size: 15px;
+        line-height: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .actuallite__main h2 {
+        padding-top: 2rem;
+        width: 45%;
+    }
+
+    .actuallite__main hr {
+        margin: 1rem 0;
+        width: 40%;
+    }
+
+    .actuallite__main>p {
+        line-height: 1rem;
+        font-size: 10px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 442px) {
+    .actuallite__content h3 {
+        font-size: 1.2rem;
+    }
+
+    .actuallite__content h4 {
+        font-size: 0.9rem;
+    }
+
+    .actuallite__content p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}

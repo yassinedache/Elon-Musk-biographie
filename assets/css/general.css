@@ -1,0 +1,304 @@
+/* ---------- global ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: black;
+}
+
+:root {
+    --main-black: rgb(20, 20, 20);
+    --main-grey: rgb(110, 110, 110);
+    --main-blue: #065CAC;
+    --main-white: rgb(226, 226, 226);
+}
+
+
+/* ---------- elements ---------- */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 10rem;
+    font-family: serif;
+    font-weight: 900;
+    line-height: 110px;
+    color: white;
+    word-break: break-all;
+}
+
+h1 span {
+    display: block;
+    border-radius: 0px;
+    width: fit-content;
+    border-bottom: 15px solid var(--main-blue);
+}
+
+h1 span:nth-child(2) {
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'lobster';
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'poppins';
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ---------- header ---------- */
+/* ---------- nav bar - pc ---------- */
+.header__nav {
+    display: block;
+
+    padding-top: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav--pc {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.nav--pc a {
+    color: white;
+    transition: 0.2s color ease-in-out;
+}
+
+.nav--pc a:hover {
+    color: var(--main-blue);
+}
+
+.nav--pc li:not(:last-child) {
+    border-right: 2px solid white;
+    padding-right: 2rem;
+}
+
+
+/* ---------- pour cacher navbar pour mobile ---------- */
+.header__nav>input {
+    display: none;
+}
+
+input[id="menuicon"]+label {
+    display: none
+}
+
+.nav--mobile {
+    display: none;
+}
+
+
+/* ---------- footer ---------- */
+.footer {
+    height: 300px;
+    background-color: var(--main-black);
+    margin-top: 100px;
+    position: relative;
+}
+
+.footer__box {
+    width: 90%;
+    height: 280px;
+    position: absolute;
+    background-color: var(--main-grey);
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__nav a {
+    color: black;
+}
+
+.footer__nav a:hover {
+    color: var(--main-white);
+}
+
+.footer__infos {
+    text-align: center;
+    width: 30%;
+}
+
+.footer__infos p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.footer__sns img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+/* ---------- responsive ---------- */
+@media screen and (max-width : 800px) {
+
+    /* ---------- navbar mobile ---------- */
+    .menu {
+        position: static;
+    }
+
+    .nav--pc {
+        display: none;
+    }
+
+    input[id="menuicon"]+label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+        margin: 1.5rem 2rem;
+    }
+
+    input[id="menuicon"]+label span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 30px;
+        background-color: var(--main-blue);
+        transition: all .35s;
+    }
+
+    
+    /* ---------- apparence de menuburger normal & lorsqu'on clique ---------- */
+    .nav--mobile__menuburger+label span:nth-child(1) {
+        top: 0;
+    }
+
+    .nav--mobile__menuburger+label span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav--mobile__menuburger+label span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .nav--mobile__menuburger:checked+label span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .nav--mobile__menuburger:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav--mobile__menuburger:checked+label span:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .nav--mobile__menuburger:checked+label+div {
+        display: block;
+    }
+
+    .nav--mobile {
+        background-color: rgba(2, 2, 2, 0.753);
+        backdrop-filter: blur(5px);
+        position: fixed;
+        z-index: 2;
+        transition: all .35s;
+        width: 100%;
+    }
+
+    .nav--mobile li {
+        padding: 10px 30px;
+    }
+
+    .nav--mobile__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        padding: 10px;
+    }
+
+    .nav--mobile__list li a {
+        z-index: 3;
+        color: white;
+        transition: color .35s;
+    }
+
+    .nav--mobile__list li a:hover {
+        color: var(--main-blue);
+    }
+
+    /* ---------- footer ---------- */
+    .footer__box {
+        height: fit-content;
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .footer__infos {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media (max-width : 600px) {
+    h1{
+        font-size: 4rem;
+        text-overflow: clip;
+        line-height: 50px;
+    }
+    h1 span{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
